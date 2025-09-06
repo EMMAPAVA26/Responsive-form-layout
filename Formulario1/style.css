@@ -1,0 +1,75 @@
+/* Estilos Generales  */
+body{
+    margin:0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #141414;
+    font-family: Arial, sans-serif;
+}
+/* tarjeta */
+.card{
+    background-color: #1f1f1f;
+    border-radius: 15px;
+    padding:30px; 
+    text-align: center; 
+    width: 300px;
+    color: white; 
+
+}
+
+/* Imagen de Perfil */
+
+.card img{
+width: 80px;
+height: 80px;
+border-radius: 50%;
+margin-bottom: 15px;
+}
+
+/* nombre */
+.card h2{
+    margin:10px 0 5px
+}
+
+/* ubicación */
+.card p.location{
+    color:#a3ff00;
+    font-weight: bold;
+    margin:0 0 15px
+}
+
+/* Bio */
+.card p.bio{
+ font-size: 0.9rem;
+ color:#cfcfcf;
+ margin-bottom: 20px;
+}
+
+/* links */
+.card .links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card .links a{
+    background-color: #333;
+    color:white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.35s;
+}
+
+.card .links a:hover{
+ background-color: #555;
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 90%; 
+}
+}
